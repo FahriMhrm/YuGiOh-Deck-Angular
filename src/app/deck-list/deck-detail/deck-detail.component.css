@@ -1,0 +1,60 @@
+table {
+  width: 100%;
+}
+
+.mat-column-card_images {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-name {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-type {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-archetype {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-desc {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-atk {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-def {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-level {
+  border-right: 1px solid currentColor;
+  padding: 0 4px;
+  text-align: center;
+}
+
+.mat-column-attribute {
+  padding: 0 4px;
+  text-align: center;
+}
+
+table th {
+  text-align: center;
+}

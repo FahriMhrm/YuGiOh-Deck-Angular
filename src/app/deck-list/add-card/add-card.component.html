@@ -1,0 +1,53 @@
+<h3 mat-dialog-title>Add to deck</h3>
+<div mat-dialog-content>
+  <form [formGroup]="deckForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Add to Deck</mat-label>
+      <mat-select formControlName="deckListId">
+        <mat-option
+          *ngFor="let item of deckList$ | async"
+          value="{{ item.id }}"
+        >
+          {{ item.deckName }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Card Name</mat-label>
+      <input formControlName="cardName" matInput />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Card Image</mat-label>
+      <input formControlName="cardImage" matInput />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Card Type</mat-label>
+      <input formControlName="cardType" matInput />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Card Count</mat-label>
+      <input
+        formControlName="cardCount"
+        type="number"
+        max="3"
+        min="1"
+        matInput
+      />
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-raised-button mat-dialog-close color="warn">Close</button>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="create()"
+    style="margin-left: 10px"
+  >
+    Submit
+  </button>
+</div>
